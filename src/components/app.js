@@ -4,7 +4,8 @@ export const App = ({ text }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <div style={{ background: '#a7b3a6', padding: '20px', borderRadius: '5px' }}>
+    // style={{ background: '#a7b3a6', padding: '20px', borderRadius: '5px' }}
+    <div className="bg-red-100 p-5 rounded-md">
       <p>{text}</p>
       <button
         className="btn"

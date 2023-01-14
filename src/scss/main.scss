@@ -1,18 +1,18 @@
 @import './fonts.scss';
 
-$font-size: 10px;
+// $font-size: 10px;
 $font-color: black;
 
-html {
-  font-size: $font-size;
-}
+// html {
+//   font-size: 16px;
+// }
 
 body {
   color: $font-color;
   font-family: 'Roboto';
   background-color: white;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  // font-size: 1.6rem;
+  // line-height: 1.5;
   overflow-wrap: normal;
   overflow-x: hidden;
   text-rendering: optimizeSpeed;
@@ -21,10 +21,10 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-img {
-  width: 100%;
-  height: auto;
-}
+// img {
+//   width: 100%;
+//   height: auto;
+// }
 
 .container {
   max-width: 1170px;
