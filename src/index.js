@@ -8,7 +8,7 @@ if (root) {
   const RDC = ReactDOMClient.createRoot(root)
   RDC.render(
     <React.StrictMode>
-      <App text='Компонент добавлен с помощью React 18' />
+      <App text="Компонент добавлен с помощью React 18" />
     </React.StrictMode>
   )
 }
