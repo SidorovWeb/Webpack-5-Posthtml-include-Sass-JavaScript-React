@@ -7,7 +7,7 @@ npm 8.19.3
 
 ## О проекте
 
-Webpack 5, Posthtml-include Sass, JavaScript, React
+Webpack 5, Posthtml-include Sass, JavaScript, React 18, tailwindcss, prettierrc, .eslintrc
 
 ## Быстрый запуск
 
