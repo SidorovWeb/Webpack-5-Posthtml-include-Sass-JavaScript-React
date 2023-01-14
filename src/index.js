@@ -1,15 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
-import './main.scss';
-import './fonts/fonts.scss';
-
-function component(text) {
-  const element = document.createElement('h1');
-  element.textContent = text;
-  return element;
+import React from 'react'
+import * as ReactDOMClient from 'react-dom/client'
+import { App } from './components/App'
+import './scss/main.scss'
+// React
+const root = document.getElementById('root')
+if (root) {
+  const RDC = ReactDOMClient.createRoot(root)
+  RDC.render(
+    <React.StrictMode>
+      <App text='Компонент добавлен с помощью React 18' />
+    </React.StrictMode>
+  )
 }
 
-document.body.prepend(component('Проект собран на Webpack'));
+// JavaScript
+const ready = () => {
+  const btn = document.querySelector('.js-btn')
+  const body = document.body
+  if (btn) {
+    btn.addEventListener('click', () => {
+      if (body.classList.contains('text-red')) {
+        btn.innerHTML = 'Добавить класс с помощью JS'
+      } else {
+        btn.innerHTML = 'Убрать класс с помощью JS'
+      }
+      body.classList.toggle('text-red')
+    })
+  }
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+document.addEventListener('DOMContentLoaded', ready)
