@@ -62,14 +62,15 @@ const bodyScrollControl = () => {
 
 export default function modal({ name, trigger, closes, beforeOpen, beforeClose }) {
     const modal = document.querySelector(name)
+    if (!modal) {
+        throw new Error(`На странице нет элемента с классом ${name}`)
+    }
     const triggers = document.querySelectorAll(trigger)
     const closeBtns = document.querySelectorAll(closes)
     const beforeO = beforeOpen
     const beforeC = beforeClose
 
-    if (!modal) {
-        throw new Error(`На странице нет элемента с классом ${name}`)
-    }
+
 
     if (!triggers.length) {
         throw new Error(`На странице нет элемента с классом  ${trigger}`)
