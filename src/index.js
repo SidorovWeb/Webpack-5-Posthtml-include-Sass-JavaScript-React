@@ -1,18 +1,21 @@
 import React from 'react'
 import * as ReactDOMClient from 'react-dom/client'
 import { App } from './components/App'
-import './main.css'
-import './scss/main.scss'
 import modal from './components/modal/modal'
+import { Fancybox } from '@fancyapps/ui'
+import '@fancyapps/ui/dist/fancybox/fancybox.css'
+import './scss/main.scss'
+import './main.css'
 
 // React
+
 const root = document.getElementById('root')
 if (root) {
     const RDC = ReactDOMClient.createRoot(root)
     RDC.render(
         <React.StrictMode>
             <App text="Компонент добавлен с помощью React 18" />
-        </React.StrictMode>
+        </React.StrictMode>,
     )
 }
 
@@ -41,6 +44,10 @@ const ready = () => {
         beforeClose: () => {
             console.log('Closing...')
         },
+    })
+
+    Fancybox.bind('[data-fancybox]', {
+        // Custom options for all galleries
     })
 }
 

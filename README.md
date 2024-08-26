@@ -25,7 +25,7 @@ npm i
 Запустите проект:
 
 ```
-npm run serve
+npm run dev
 ```
 
 Собрать проект:

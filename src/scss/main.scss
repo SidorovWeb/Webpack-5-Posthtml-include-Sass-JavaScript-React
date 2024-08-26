@@ -9,81 +9,83 @@ $font-color: black;
 // }
 
 body {
-  color: $font-color;
-  font-family: 'Roboto';
-  background-color: white;
-  // font-size: 1.6rem;
-  // line-height: 1.5;
-  overflow-wrap: normal;
-  overflow-x: hidden;
-  text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+    color: $font-color;
+    font-family: 'Roboto';
+    background-color: white;
+    // font-size: 1.6rem;
+    // line-height: 1.5;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
+
 // img {
 //   width: 100%;
 //   height: auto;
 // }
 
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
 }
 
 .svg {
-  width: 10rem;
+    width: 10rem;
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  appearance: none;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  text-decoration: none;
-  text-decoration: none;
-  white-space: nowrap;
-  overflow: visible;
-  vertical-align: middle;
-  font-family: inherit;
-  line-height: 1;
-  transition: transform, color, background-color, border-color, 225ms;
-  background-color: transparent;
-  background-origin: border-box;
-  // outline: none;
-  /* другие стили*/
-  min-width: 10rem;
-  padding: 0.625em 1em;
-  background-color: #312d27;
-  border-radius: 0.3125em;
-  color: white;
-  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    text-decoration: none;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: visible;
+    vertical-align: middle;
+    font-family: inherit;
+    line-height: 1;
+    transition: transform, color, background-color, border-color, 225ms;
+    background-color: transparent;
+    background-origin: border-box;
+    // outline: none;
+    /* другие стили*/
+    min-width: 10rem;
+    padding: 0.625em 1em;
+    background-color: #312d27;
+    border-radius: 0.3125em;
+    color: white;
+    cursor: pointer;
 
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover {
-      text-decoration: none;
-      background-color: lighten(#312d27, 5%);
+    @media (hover: hover),
+    screen and (min-width: 0\0) {
+        &:hover {
+            text-decoration: none;
+            background-color: lighten(#312d27, 5%);
+        }
     }
-  }
 
-  &:active {
-    background-color: darken(#312d27, 15%);
-  }
+    &:active {
+        background-color: darken(#312d27, 15%);
+    }
 }
 
 .text-red {
-  color: red;
+    color: red;
 }
 
 .sss {
